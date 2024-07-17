@@ -1,0 +1,26 @@
+{
+  "name": "botfanmu",
+  "version": "1.0.0",
+  "description": "BotFanMu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiesu19/BotFanMU.git"
+  },
+  "keywords": [
+    "hieu1919"
+  ],
+  "author": "hiesu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hiesu19/BotFanMU/issues"
+  },
+  "homepage": "https://github.com/Hiesu19/BotFanMU#readme",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  }
+}
