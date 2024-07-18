@@ -1,0 +1,20 @@
+import { User } from 'discord.js';
+
+module.exports.data = {
+    name: 'avatar',
+    description: 'Xem anh nen.',
+    type: 1,
+    option: {
+        name: 'user',
+        description: 'Chọn ngươig dùng xem avartar.',
+        type: 6,
+        required: false,
+    },
+    integration_types: [0, 1],
+    contexts: [0, 1, 2],
+};
+module.exports.execute = async (clent, interaction) => {
+    const user = interaction.option.getUser('user') || interaction.user;
+    interaction.reply(user.displayAvatarURL({ size: 1024 }));
+    return;
+};
